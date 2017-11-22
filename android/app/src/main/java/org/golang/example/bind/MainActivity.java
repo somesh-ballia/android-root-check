@@ -10,6 +10,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import hydra.Hydra;
+
 public class MainActivity extends Activity {
 
     private TextView mTextView;
@@ -20,11 +22,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mTextView = (TextView) findViewById(R.id.mytextview);
 
-
-        /*
         // Call Go function.
-        String greetings = Hello.greetings("Android and Gopher");
+        String greetings = Hydra.analyse("something");
         mTextView.setText(greetings);
-        */
+
     }
 }
